@@ -5,12 +5,12 @@
 @section('main-content')
 <div class="relative">
     <div class="jumbotron">
-    <h3>current series</h3>
+    <h2>current series</h2>
     </div>
     <div class="comic-list">
         <div class="container main-comics">
             <div class="comic-list">
-                <div class="pasta-container">
+                <div>
                     @foreach($comics as $comicElement)
                         <div class="comic-element">
                             <img src="{{ $comicElement['thumb'] }}" alt="{{ $comicElement['title'] }}">

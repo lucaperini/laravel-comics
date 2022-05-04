@@ -8,52 +8,56 @@
     text-align:left;
     align-items:center;
 
-    img {
+        img {
         width: 120px;
         height: 120px;
         object-fit:cover;
         object-position:center top;
-    }
+        }
 
-    h4  {
+        h4 {
         font-size:.6rem;
         margin-top:.5rem;
         text-transform:uppercase;
         vertical-align: middle;
+        width:120px;
         }
 
     .comic-title {
         display:flex;
         align-self: flex-end;
     }
+}
 
 .comic-list {
-    width:100%;
-    background-color: $bgDarkColor;
+        width:100%;
+        background-color: $bgDarkColor;
+    }
 
     .main-comics {
     padding-top:2.5rem;
     padding-bottom:2rem;
     padding-left: 1.5rem;
     display:flex;
-
     background-color: $bgDarkColor;
     color:white;
     font-size:.8rem;
     font-weight:700;
-    }
+
 
     h5{
         font-size:.8rem;
         font-weight:700;
     }
 }
+
+
 .jumbotron{
     width:100%;
     height:400px;
-    background-image: url('images/jumbotron.jpg');
+    background-image: url('../images/jumbotron.jpg');
     background-size: cover;
-    h3{
+    h2{
         text-transform:uppercase;
         color:white;
         font-size: 1rem;
@@ -61,18 +65,24 @@
         padding:.6rem;
         background-color: $primaryColor;
         position:absolute;
-        top:41%;
-        left:16%;
+        top:46%;
+        left:14%;
         }
 }
 
-.container {
+.header-container {
     width:75%;
     height: 100px;
     margin:0 auto;
     display:flex;
     justify-content:center;
     padding:.3rem;
+}
+
+.container {
+    width:75%;
+    margin:0 auto;
+
 }
 
 * {
@@ -97,12 +107,20 @@
     width:100%;
     justify-content: space-around;
         img {
-            padding:.4rem;
+            width:100px;
+            height:100px;
+            padding:1rem;
+
+        }
+
+        nav {
+            justify-content:center;
         }
 
         ul {
 
-            margin-top:2rem;
+            margin-top:2.4rem;
+
 
         li {
             display:inline-block;
@@ -127,4 +145,4 @@
         }
     }
 }
-}
+
