@@ -54,7 +54,7 @@
 
 .jumbotron{
     width:100%;
-    height:400px;
+    height:300px;
     background-image: url('../images/jumbotron.jpg');
     background-size: cover;
     h2{
@@ -147,6 +147,48 @@
 }
 .top-main {
     width:100%;
-    height: 50px;
+    height: 60px;
     background-color:$primaryColor;
+
+}
+
+.comic-item-img {
+    width:10%;
+    position:fixed;
+    left:23%;
+    top:30%;
+    z-index:2;
+    border: 1px solid white;
+}
+
+.comic-book {
+    left:23.1%;
+    top:30.1%;
+    color: white;
+    width: 80px;
+    height:15px;
+    background-color: rgb(76,166,212);
+    text-transform: uppercase;
+    font-size:.7rem;
+
+    text-align:left;
+    position:fixed;
+    z-index: 3;
+
+}
+
+.gallery {
+    left:23.1%;
+    top:56.5%;
+    color: white;
+    width: 142px;
+    height:20px;
+    background-color: rgb(76,166,212);
+    text-transform: uppercase;
+    font-size:.7rem;
+    text-align:center;
+    padding-top:.3rem;
+    position:fixed;
+    z-index: 3;
+
 }

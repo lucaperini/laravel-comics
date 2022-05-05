@@ -6,11 +6,15 @@
 <div class="relative">
     <div class="jumbotron">
 
+        <img class="comic-item-img" src= "{{ $comic['thumb'] }}">
+        <p class="gallery">view gallery</p>
+        <p class="comic-book">comic-book</p>
     </div>
 
     <div class="top-main relative">
-        <img src= "{ $comicElement['thumb'] }">
+
     </div>
+
 
         <div class="comic-item">
             <h1>{{ $comic['title'] }}</h1>
