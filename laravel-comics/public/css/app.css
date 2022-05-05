@@ -28,6 +28,13 @@ body {
   display: flex;
   align-self: flex-end;
 }
+.comic-element a:hover {
+  color: rgb(56, 128, 241);
+}
+.comic-element a {
+  color: white;
+  text-decoration: none;
+}
 
 .comic-list {
   width: 100%;
@@ -63,7 +70,7 @@ body {
   padding: 0.6rem;
   background-color: rgb(56, 128, 241);
   position: absolute;
-  top: 46%;
+  top: 39%;
   left: 14%;
 }
 
