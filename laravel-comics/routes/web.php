@@ -22,3 +22,11 @@ Route::get('/', function () {
     return view('guest.comics', ["comics" => $comics]);
 })->name('comics-page');
 
+Route::get('/products/{index}', function ($index) {
+    $comicsList = config('comics');
+    if( is_numeric($index) && $index >= 0 && $index < count($comicsList)){
+        return view('guest.detail', ["comic" => $comicsList[$index]]);
+    } else {
+        abort(404);
+    }
+})->name('comic-detail-page');

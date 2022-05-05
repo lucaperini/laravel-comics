@@ -11,11 +11,12 @@
         <div class="container main-comics">
             <div class="comic-list">
                 <div>
-                    @foreach($comics as $comicElement)
+                    @foreach($comics as $index => $comicElement)
                         <div class="comic-element">
                             <img src="{{ $comicElement['thumb'] }}" alt="{{ $comicElement['title'] }}">
-                            <h4>{{ $comicElement['title'] }}</h4>
-
+                            <a href="{{ route("comic-detail-page", ['index' => $index ]) }}">
+                                <h4>{{ $comicElement['title'] }}</h4>
+                            </a>
                         </div>
                     @endforeach
                 </div>
