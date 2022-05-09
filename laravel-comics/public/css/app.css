@@ -88,6 +88,20 @@ body {
   margin: 0 auto;
 }
 
+.container-detail {
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.container-info {
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -149,16 +163,20 @@ body {
 
 .comic-item-img {
   width: 10%;
-  position: fixed;
+  position: absolute;
   left: 23%;
-  top: 30%;
+  top: 38%;
   z-index: 2;
   border: 1px solid white;
 }
 
+.comic-item h1 {
+  width: 60%;
+}
+
 .comic-book {
   left: 23%;
-  top: 30%;
+  top: 38%;
   color: white;
   width: 80px;
   height: 15px;
@@ -168,13 +186,13 @@ body {
   border-top: 1px solid white;
   border-left: 1px solid white;
   text-align: left;
-  position: fixed;
+  position: absolute;
   z-index: 3;
 }
 
 .gallery {
   left: 23%;
-  top: 57%;
+  top: 108%;
   color: white;
   width: 144px;
   height: 20px;
@@ -183,9 +201,172 @@ body {
   font-size: 0.7rem;
   text-align: center;
   padding-top: 0.2rem;
-  position: fixed;
+  position: absolute;
   z-index: 3;
   border-left: 1px solid white;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
+}
+
+.comic-item h1 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.comic-info {
+  background-color: rgb(112, 184, 100);
+  height: 40px;
+  width: 50%;
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+  margin-right: -1rem;
+  border-bottom: 1px solid red;
+  padding-right: 1rem;
+}
+.comic-info p {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  color: white;
+  font-size: 0.8rem;
+}
+.comic-info .uno {
+  float: left;
+  color: lightgreen;
+  font-weight: bold;
+}
+.comic-info .due {
+  float: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: lightgreen;
+}
+.comic-info .price {
+  color: white;
+  font-weight: bold;
+  margin-left: -1.5rem;
+}
+
+.comic-info-b {
+  background-color: rgb(112, 184, 100);
+  height: 40px;
+  width: 19%;
+  display: inline-block;
+  font-weight: bold;
+  border-bottom: 1px solid red;
+  border-left: 1px solid red;
+}
+.comic-info-b p {
+  padding: 0.7rem 1rem;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.comic-info-left {
+  width: 55%;
+  border-bottom: 1px solid lightgrey;
+  margin-left: 20rem;
+}
+.comic-info-left h3 {
+  padding-bottom: 1rem;
+}
+
+.comic-info-right {
+  width: 30%;
+  border-bottom: 1px solid lightgrey;
+  float: right;
+  margin-right: 15rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.comic-info-right h3 {
+  padding-bottom: 1rem;
+}
+
+.comic-info-box {
+  border-top: 1px solid lightgrey;
+  margin-bottom: 1.8rem;
+}
+.comic-info-box p {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: grey;
+}
+.comic-info-box h4 {
+  float: right;
+  font-size: 0.7rem;
+  align-items: center;
+  width: 350px;
+  color: rgb(134, 201, 234);
+  margin-top: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.comic-info-box-right {
+  border-top: 1px solid lightgrey;
+  margin-bottom: 1rem;
+}
+.comic-info-box-right p {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: grey;
+}
+.comic-info-box-right h4 {
+  float: right;
+  font-size: 0.7rem;
+  align-items: center;
+  color: rgb(134, 201, 234);
+  margin-top: 0.7rem;
+  text-transform: uppercase;
+  width: 280px;
+  margin-right: 4rem;
+}
+
+.comic-adv {
+  width: 300px;
+  float: right;
+  position: absolute;
+  top: 65%;
+  right: 18%;
+}
+.comic-adv img {
+  width: 230px;
+}
+.comic-adv p {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 7.8rem;
+  color: #666;
+}
+.comic-adv h4 {
+  float: right;
+  font-size: 0.7rem;
+  align-items: center;
+  width: 350px;
+  color: rgb(134, 201, 234);
+  margin-top: 0.8rem;
+}
+
+.description {
+  width: 68%;
+  padding-bottom: 5rem;
+  font-size: 0.8rem;
+}
+
+.comic-meta-section {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: space-around;
+  align-self: center;
+  background-color: rgb(246, 246, 246);
+  height: 450px;
+  border-top: 1px solid lightgray;
+  width: 100%;
 }
