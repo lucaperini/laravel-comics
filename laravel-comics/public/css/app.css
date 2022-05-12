@@ -369,4 +369,105 @@ body {
   height: 450px;
   border-top: 1px solid lightgray;
   width: 100%;
+  z-index: 100;
+  position: relative;
+}
+
+.footer-top {
+  background-image: url("../images/footer-bg.jpg");
+  background-color: rgb(28, 28, 28);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+.footer-top nav {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-around;
+  margin-left: 170px;
+}
+.footer-top nav ul {
+  list-style-type: none;
+  text-align: left;
+  margin-right: 1rem;
+}
+.footer-top nav a {
+  text-decoration: none;
+  color: lightgray;
+  font-size: 0.6rem;
+}
+.footer-top nav h4 {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.footer-top .dc-logo {
+  width: 90%;
+  margin-top: -100px;
+  padding-left: 160px;
+  position: relative;
+}
+
+.container-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  height: 100px;
+  width: 100vw;
+  position: relative;
+}
+
+.social-links ul {
+  display: flex;
+  list-style-type: none;
+}
+.social-links ul li {
+  margin-right: 1rem;
+}
+.social-links h4 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.section-footer-social {
+  background-color: rgb(28, 28, 28);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-footer-social h4 {
+  display: inline-block;
+}
+.section-footer-social .sign-up-btn {
+  color: rgb(56, 128, 241);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  border: 1px solid white;
+  text-decoration: none;
+  align-items: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 6rem;
+  margin-right: 120px;
+}
+
+.title {
+  float: left;
+  margin-right: 1.5rem;
+  text-transform: uppercase;
+  color: rgb(56, 128, 241);
+  font-size: 1rem;
 }

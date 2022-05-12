@@ -1,6 +1,11 @@
+<?php
+$linksShop = config('footer-shop-nav');
+$linksDC = config('footer-dc-nav');
+$linksSites = config('footer-sites-nav');
+?>
 @extends('layouts.base')
 
-@section('title', 'comic')
+@section('title', 'Comic')
 
 @section('main-content')
     <div class="relative">

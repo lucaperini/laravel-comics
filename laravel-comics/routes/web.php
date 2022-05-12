@@ -19,13 +19,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
-    return view('guest.comics', ["comics" => $comics]);
+    $links = config('footer-comics-nav');
+    return view('guest.comics', ["comics" => $comics], ["links" => $links]);
 })->name('comics-page');
 
 Route::get('/products/{index}', function ($index) {
     $comicsList = config('comics');
+    $links = config('footer-comics-nav');
     if( is_numeric($index) && $index >= 0 && $index < count($comicsList)){
-        return view('guest.detail', ["comic" => $comicsList[$index]]);
+        return view('guest.detail', ["comic" => $comicsList[$index]], ["links" => $links]);
     } else {
         abort(404);
     }
